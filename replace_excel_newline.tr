@@ -1,0 +1,4 @@
+# Some programs give odd new-line characters that UNIX dislikes, that appear as ^M in more or less.
+# This will make them normal
+
+tr '\r' '\n' < excel_data.csv 

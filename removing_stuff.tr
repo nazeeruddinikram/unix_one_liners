@@ -1,0 +1,9 @@
+# tr turns characters into other characters, or deletes them. 
+# deletes newlines from bar and allocates the result to the file gip
+
+tr -d "\n" < bar > gip
+
+#removes numbers from foo, then removes all blankspace characters (spaces, tabs etc) from 
+# this and allocates the result to the file bar
+
+tr -d [:digit:] < foo | tr -d [:blank:] >  bar
